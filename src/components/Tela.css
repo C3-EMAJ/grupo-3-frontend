@@ -1,0 +1,72 @@
+#tela {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 2%;
+}
+#imagem-login {
+    padding-top: 10px;
+    width: 500px;
+}
+
+.email-texto{
+    margin-left: -420px;
+}
+
+.senha-texto {
+    margin-left: -383px;
+}
+
+.senha-texto, .email-texto {
+    margin-bottom: 7px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #545F71;
+}
+
+.input {
+    width: 442px;
+    height: 50px;
+    border-radius: 8px;
+    border: solid;
+    border-width: 1px;
+    border-color: #545F71;
+    margin-bottom: 1%;
+    font-size: 22px;
+    color: #545F71;
+    padding: 0px 12px 0px 12px;
+}
+
+#password{
+    font-size: 38px;
+}
+#div-botao{
+    margin-left: 723px;
+}
+
+#botao {
+    color: rgb(255, 255, 255); 
+    background-color: #FDAE17;
+    text-align: center;
+    font-size: 20px; 
+    font-weight: 600; 
+    display: flex;
+    border-radius: 10px;
+    height: 60px;
+    width: 470px;
+    border: 0;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+#texto-botao {
+    margin: auto;
+}
+
+#esqueci-senha {
+    padding-top: 20px;
+}
+
+a {
+    color: #545F71;
+    font-weight: 600;
+}
