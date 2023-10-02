@@ -1,0 +1,67 @@
+#tela {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sidebar {
+    background-color: #CDCDCD;
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+}
+#barra {
+    width: 1px;
+    height: 10px;
+    background-color: #FDAE17;
+    color: #FDAE17;
+
+}
+
+#logo-emaj {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    padding-left: 7%;
+    font-size: 20px;
+    justify-content: left;
+    position: static;
+} 
+
+#imagem-perfil {
+    border-radius: 150px;
+    width: 50%;
+    align-self: center;
+    margin-top: 50px;
+
+}
+#nome-aluno {
+    font-weight: 700;
+    font-size: 20px;
+    align-self: center;
+
+}
+
+#tipo-de-usuario {
+    color: #FDAE17;
+    align-self: center;
+    margin-top: -20px;
+    font-weight: 500;
+    font-size: 16px;
+
+}
+#navlinks-div{
+    padding: 0% 5% 0% 20%;
+}
+
+#navlink-processos {
+    align-self: center;
+    font-weight: 500;
+}
+
+.navlink {
+    justify-content: left;
+    font-weight: 500;
+    padding-top: 10px;
+}
+

@@ -1,8 +1,8 @@
-import './Tela.css';
-import imagem from "./emaj-login.png"
+import './TelaLogin.css';
+import imagem from "./img/emaj-login.png"
 
 
-function Tela() {
+function TelaLogin() {
     return(
         <div id='tela' className='Tela'>
            
@@ -24,4 +24,4 @@ function Tela() {
     )
 }
 
-export default Tela;
+export default TelaLogin;
