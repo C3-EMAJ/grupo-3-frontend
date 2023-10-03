@@ -3,7 +3,7 @@ import imagem from "./img/foto-perfil.png"
 
 function TelaProcessos() {
     return(
-        <div id="Tela">
+        <div id="tela">
 
             <div class="sidebar">
                 <p id="logo-emaj"> <span id="barra">|</span> EMAJ</p>
