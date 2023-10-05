@@ -7,8 +7,10 @@ import agendamento from "./img/agendamento.png"
 import pastas from "./img/pastas.png"
 import config from "./img/config.png"
 import saida from "./img/saida.png"
+import Navlink from "./NavLink";
 
 function TelaProcessos() {
+    const logos = [{icone:home, texto:"Processos"}, {icone:usuario, texto:"Adicionar Usuário"}, {icone:assistido, texto:"Assistidos"}, {icone:agendamento, texto:"Agendamentos"}, {icone:pastas, texto:"Pastas"}, {icone:config, texto:"Configurações"}] 
     return(
         <div id="tela">
 
@@ -18,12 +20,9 @@ function TelaProcessos() {
                 <p id="nome-aluno">Hans Rafael</p>
                 <p id="tipo-de-usuario">Aluno</p>
                 <div id="navlinks-div">
-                    <p id="navlink-processos"> <img src={home} id='imagem-home'></img> Processos</p>
-                    <p class="navlink"> <img src={usuario} id='imagem-usuario'></img> Adicionar Usuário</p>
-                    <p class="navlink"> <img src={assistido} id='imagem-assistido'></img> Assistidos</p>
-                    <p class="navlink"> <img src={agendamento} id='imagem-agendamento'></img> Agendamentos</p>
-                    <p class="navlink"> <img src={pastas} id='imagem-pastas'></img> Pastas</p>
-                    <p class="navlink"> <img src={config} id='imagem-config'></img> Configurações</p>
+                    {logos && logos.map((botao, i) => 
+                        <Navlink key={i} imagem={botao.icone} texto={botao.texto} />
+                    )}
                 </div>
 
                 <div>
