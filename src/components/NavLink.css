@@ -1,6 +1,10 @@
 .navlink {
-    justify-content: left;
+    justify-content: center;
     font-weight: 500;
     padding-top: 10px;
     font-family: 'Montserrat', sans-serif;
+}
+
+#imagem-config {
+    padding-right: 4%;
 }

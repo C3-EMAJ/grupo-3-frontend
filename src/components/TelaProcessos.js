@@ -10,7 +10,7 @@ import saida from "./img/saida.png"
 import Navlink from "./NavLink";
 
 function TelaProcessos() {
-    const logos = [{icone:home, texto:"Processos"}, {icone:usuario, texto:"Adicionar Usuário"}, {icone:assistido, texto:"Assistidos"}, {icone:agendamento, texto:"Agendamentos"}, {icone:pastas, texto:"Pastas"}, {icone:config, texto:"Configurações"}] 
+    const logos = [{icone:home, texto:"Processos"}, {icone:usuario, texto:" Adicionar Usuário"}, {icone:assistido, texto:"Assistidos"}, {icone:agendamento, texto:"Agendamentos"}, {icone:pastas, texto:"Pastas"}, {icone:config, texto:"Configurações"}] 
     return(
         <div id="tela">
 
@@ -25,8 +25,8 @@ function TelaProcessos() {
                     )}
                 </div>
 
-                <div>
-                    <p class="navlink">Sair <img src={saida} id='imagem-saida'></img></p>
+                <div id="botao-sair">
+                    <p>Sair <img src={saida} id='imagem-saida'></img></p>
                 </div>
 
             </div>
