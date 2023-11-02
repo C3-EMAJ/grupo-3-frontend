@@ -35,7 +35,6 @@ function TelaProcessos() {
             </div>
             <div class="main-section">
                 <div class="header">
-                    <h1 id="titulo">Processos</h1>
                     <div class="filtro-tempo">
                         <table>
                             <tr>
@@ -59,7 +58,6 @@ function TelaProcessos() {
                                         <option value="escritorioX">Escritório 2</option>
                                     </select>
                                 </td>
-
                                 <td class="texto-filtro">Assunto</td>
                                 <td>
                                     <select name="assunto-select" id="select-escritório">
@@ -86,10 +84,13 @@ function TelaProcessos() {
                                         <option value="escritorioX">Concluído</option>
                                     </select>
                                 </td> 
+                                <td class="texto-filtro">Clean</td>
+                                <td class="texto-filtro">Search</td>
                             </tr>
                         </table>
                     </div>
                 </div>
+                <h1 id="titulo">Processos</h1>
                 <div class="content-table">
                     <table>
                         <tr id="titulos-tabela">
