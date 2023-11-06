@@ -16,7 +16,6 @@ function TelaProcessos() {
     const logos = [{icone:home, texto:"Processos", id:"botaoProcessos"}, {icone:usuario, texto:" Adicionar Usuário", id:"botaoAdicionarUsuário"}, {icone:assistido, texto:"Assistidos", id:"botaoAssistidos"}, {icone:agendamento, texto:"Agendamentos", id:"botaoAgendamentos"}, {icone:pastas, texto:"Pastas", id:"botaoPastas"}, {icone:config, texto:"Configurações"}] 
     return(
         <div id="tela">
-
             <div class="sidebar">
                 <p id="logo-emaj"> <span id="barra">|</span> EMAJ</p>
                 <img src={imagem} id='imagem-perfil'></img>
@@ -84,7 +83,7 @@ function TelaProcessos() {
                                         <option value="escritorioX">Concluído</option>
                                     </select>
                                 </td> 
-                                <td class="texto-filtro">Clean</td>
+                                <td class="texto-filtro" id="clean">Clean</td>
                                 <td class="texto-filtro" id="search">Search</td>
                             </tr>
                         </table>
@@ -107,7 +106,13 @@ function TelaProcessos() {
                             <td class="conteudo-tabela">Assunto 1</td>
                             <td class="conteudo-tabela">123456789</td>
                             <td class="conteudo-tabela">Concluído</td>
-                            <td class="conteudo-tabela" id="icone"> <img src="./s"/> </td>
+                            <td class="conteudo-tabela" id="icone">
+                                <div class="icon-div">
+                                    <img src={invisibleIcon} alt="" class="invisible-icon" />
+                                    <img src={editIcon} alt=""  class="edit-icon"/>
+                                    <img src={trashIcon} alt="" class="trash-icon"/>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td class="conteudo-tabela">10/10/2021</td>
@@ -115,7 +120,13 @@ function TelaProcessos() {
                             <td class="conteudo-tabela">Assunto 2</td>
                             <td class="conteudo-tabela">123456789</td>
                             <td class="conteudo-tabela">Ação Pendente</td>
-                            <td class="conteudo-tabela" id="icone"> Icone </td>
+                            <td class="conteudo-tabela" id="icone">
+                                <div class="icon-div">
+                                    <img src={invisibleIcon} alt="" class="invisible-icon" />
+                                    <img src={editIcon} alt=""  class="edit-icon"/>
+                                    <img src={trashIcon} alt="" class="trash-icon"/>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td class="conteudo-tabela">10/10/2021</td>
@@ -123,7 +134,13 @@ function TelaProcessos() {
                             <td class="conteudo-tabela">Assunto 3</td>
                             <td class="conteudo-tabela">123456789</td>
                             <td class="conteudo-tabela">Concluído</td>
-                            <td class="conteudo-tabela" id="icone"> Icone </td>
+                            <td class="conteudo-tabela" id="icone">
+                                <div class="icon-div">
+                                    <img src={invisibleIcon} alt="" class="invisible-icon" />
+                                    <img src={editIcon} alt=""  class="edit-icon"/>
+                                    <img src={trashIcon} alt="" class="trash-icon"/>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td class="conteudo-tabela">10/10/2021</td>
@@ -131,7 +148,13 @@ function TelaProcessos() {
                             <td class="conteudo-tabela">Assunto 4</td>
                             <td class="conteudo-tabela">123456789</td>
                             <td class="conteudo-tabela">Ação Pendente</td>
-                            <td class="conteudo-tabela" id="icone"> Icone </td>
+                            <td class="conteudo-tabela" id="icone">
+                                <div class="icon-div">
+                                    <img src={invisibleIcon} alt="" class="invisible-icon" />
+                                    <img src={editIcon} alt=""  class="edit-icon"/>
+                                    <img src={trashIcon} alt="" class="trash-icon"/>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td class="conteudo-tabela">10/10/2021</td>
@@ -139,7 +162,13 @@ function TelaProcessos() {
                             <td class="conteudo-tabela">Assunto 5</td>
                             <td class="conteudo-tabela">123456789</td>
                             <td class="conteudo-tabela">Em julgamento</td>
-                            <td class="conteudo-tabela" id="icone"> Icone </td>
+                            <td class="conteudo-tabela" id="icone">
+                                <div class="icon-div">
+                                    <img src={invisibleIcon} alt="" class="invisible-icon" />
+                                    <img src={editIcon} alt=""  class="edit-icon"/>
+                                    <img src={trashIcon} alt="" class="trash-icon"/>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td class="conteudo-tabela">10/10/2021</td>
@@ -147,7 +176,13 @@ function TelaProcessos() {
                             <td class="conteudo-tabela">Assunto 6</td>
                             <td class="conteudo-tabela">123456789</td>
                             <td class="conteudo-tabela">Ação Pendente</td>
-                            <td class="conteudo-tabela" id="icone"> Icone </td>
+                            <td class="conteudo-tabela" id="icone">
+                                <div class="icon-div">
+                                    <img src={invisibleIcon} alt="" class="invisible-icon" />
+                                    <img src={editIcon} alt=""  class="edit-icon"/>
+                                    <img src={trashIcon} alt="" class="trash-icon"/>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td class="conteudo-tabela">10/10/2021</td>
@@ -155,7 +190,13 @@ function TelaProcessos() {
                             <td class="conteudo-tabela">Assunto 7</td>
                             <td class="conteudo-tabela">123456789</td>
                             <td class="conteudo-tabela">Ação Pendente</td>
-                            <td class="conteudo-tabela" id="icone"> Icone </td>
+                            <td class="conteudo-tabela" id="icone">
+                                <div class="icon-div">
+                                    <img src={invisibleIcon} alt="" class="invisible-icon" />
+                                    <img src={editIcon} alt=""  class="edit-icon"/>
+                                    <img src={trashIcon} alt="" class="trash-icon"/>
+                                </div>
+                            </td>
                         </tr>
                     </table>
                 </div>
