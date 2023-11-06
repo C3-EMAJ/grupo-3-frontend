@@ -85,7 +85,7 @@ function TelaProcessos() {
                                     </select>
                                 </td> 
                                 <td class="texto-filtro">Clean</td>
-                                <td class="texto-filtro">Search</td>
+                                <td class="texto-filtro" id="search">Search</td>
                             </tr>
                         </table>
                     </div>
