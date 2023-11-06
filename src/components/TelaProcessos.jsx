@@ -51,7 +51,7 @@ function TelaProcessos() {
                         <table>
                             <tr>
                                 <td class="texto-filtro">Escritório</td>
-                                <td>
+                                <td class="td-select">
                                     <select name="escritorio-select" id="select-escritório">
                                         <option value="" disabled selected>filtrar escritório</option>
                                         <option value="escritorioX">Escritório 1</option>
@@ -59,7 +59,7 @@ function TelaProcessos() {
                                     </select>
                                 </td>
                                 <td class="texto-filtro">Assunto</td>
-                                <td>
+                                <td class="td-select">
                                     <select name="assunto-select" id="select-escritório">
                                         <option value="" disabled selected>filtrar assunto</option>
                                         <option value="escritorioX">Assunto 1</option>
@@ -68,7 +68,7 @@ function TelaProcessos() {
                                 </td>
 
                                 <td class="texto-filtro">Número do Processo</td>
-                                <td>
+                                <td class="td-select">
                                     <select name="id-select" id="select-id">
                                         <option value="" disabled selected>filtrar número</option>
                                         <option value="escritorioX">123456789</option>
@@ -77,7 +77,7 @@ function TelaProcessos() {
                                 </td>    
 
                                 <td class="texto-filtro">Status</td>
-                                <td>
+                                <td class="td-select">
                                     <select name="status-select" id="select-status">
                                         <option value="" disabled selected>filtrar status</option>
                                         <option value="escritorioX">Pendente</option>
