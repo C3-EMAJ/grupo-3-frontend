@@ -33,61 +33,70 @@ function TelaProcessos() {
 
             </div>
             <div class="main-section">
-                <div class="header">
-                    <div class="filtro-tempo">
-                        <table>
-                            <tr>
-                                <td>Today</td>
-                                <td>Yesterday</td>
-                                <td>Last 7 days</td>
-                                <td>Last 30 days</td>
-                                <td>Last Month</td>
-                                <td>17-02-2023</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="filtro">
-                        <table>
-                            <tr>
-                                <td class="texto-filtro">Escritório</td>
-                                <td class="td-select">
-                                    <select name="escritorio-select" id="select-escritório">
-                                        <option value="" disabled selected>filtrar escritório</option>
-                                        <option value="escritorioX">Escritório 1</option>
-                                        <option value="escritorioX">Escritório 2</option>
-                                    </select>
-                                </td>
-                                <td class="texto-filtro">Assunto</td>
-                                <td class="td-select">
-                                    <select name="assunto-select" id="select-escritório">
-                                        <option value="" disabled selected>filtrar assunto</option>
-                                        <option value="escritorioX">Assunto 1</option>
-                                        <option value="escritorioX">Assunto 2</option>
-                                    </select>
-                                </td>
+                <div class="quebra-galho">
+                    <div class="header">
+                        <div class="filtro-tempo">
+                            <table>
+                                <tr>
+                                    <td>Today</td>
+                                    <td>Yesterday</td>
+                                    <td>Last 7 days</td>
+                                    <td>Last 30 days</td>
+                                    <td>Last Month</td>
+                                    <td>17-02-2023</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="filtro">
+                            <table>
+                                <tr>
+                                    <td class="texto-filtro">Escritório</td>
+                                    <td class="td-select">
+                                        <select name="escritorio-select" id="select-escritório">
+                                            <option value="" disabled selected>filtrar escritório</option>
+                                            <option value="escritorioX">Escritório 1</option>
+                                            <option value="escritorioX">Escritório 2</option>
+                                        </select>
+                                    </td>
+                                    <td class="espaco"></td>
 
-                                <td class="texto-filtro">Número do Processo</td>
-                                <td class="td-select">
-                                    <select name="id-select" id="select-id">
-                                        <option value="" disabled selected>filtrar número</option>
-                                        <option value="escritorioX">123456789</option>
-                                        <option value="escritorioX">123456789</option>
-                                    </select>
-                                </td>    
+                                    <td class="texto-filtro">Assunto</td>
+                                    <td class="td-select">
+                                        <select name="assunto-select" id="select-escritório">
+                                            <option value="" disabled selected>filtrar assunto</option>
+                                            <option value="escritorioX">Assunto 1</option>
+                                            <option value="escritorioX">Assunto 2</option>
+                                        </select>
+                                    </td>
+                                    <td class="espaco"></td>
 
-                                <td class="texto-filtro">Status</td>
-                                <td class="td-select">
-                                    <select name="status-select" id="select-status">
-                                        <option value="" disabled selected>filtrar status</option>
-                                        <option value="escritorioX">Pendente</option>
-                                        <option value="escritorioX">Concluído</option>
-                                    </select>
-                                </td> 
-                                <td class="texto-filtro" id="clean">Clean</td>
-                                <td class="texto-filtro" id="search">Search</td>
-                            </tr>
-                        </table>
+                                    <td class="texto-filtro">Número do Processo</td>
+                                    <td class="td-select">
+                                        <select name="id-select" id="select-id">
+                                            <option value="" disabled selected>filtrar número</option>
+                                            <option value="escritorioX">123456789</option>
+                                            <option value="escritorioX">123456789</option>
+                                        </select>
+                                    </td>    
+                                    <td class="espaco"></td>
+
+                                    <td class="texto-filtro">Status</td>
+                                    <td class="td-select">
+                                        <select name="status-select" id="select-status">
+                                            <option value="" disabled selected>filtrar status</option>
+                                            <option value="escritorioX">Pendente</option>
+                                            <option value="escritorioX">Concluído</option>
+                                        </select>
+                                    </td> 
+                                    <td class="espaco"></td>
+
+                                    <td class="texto-filtro" id="clean">Clean</td>
+                                    <td class="texto-filtro" id="search">Search</td>
+                                </tr>
+                            </table>
+                            </div>
                     </div>
+                    <div id="botao-processo">Adicionar novo processo</div>
                 </div>
                 <h1 id="titulo">Processos</h1>
                 <div class="content-table">
