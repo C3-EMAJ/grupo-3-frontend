@@ -1,12 +1,12 @@
 import "./NavLink.css"
 
-
-function Navlink({imagem, texto, id}){
-    return(
-        <div>
-            <p class="navlink" id={id}> <img src={imagem} id='imagem-config'></img> {texto}</p>
-        </div>
-    )
+function Navlink({ imagem, texto, id, className }) {
+    return (
+      <div className={`navlink ${className}`} id={id}>
+        <img src={imagem} alt={texto} />
+        <span>{texto}</span>
+      </div>
+    );
 }
 
 export default Navlink

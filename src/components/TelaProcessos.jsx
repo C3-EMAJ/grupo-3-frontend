@@ -12,8 +12,21 @@ import editIcon from "./img/edit-icon.png"
 import trashIcon from "./img/trash-icon.png"
 import invisibleIcon from "./img/invisible-icon.png"
 
+
+const logos = [{icone:home, texto:"Processos", id:"botaoProcessos", status:true}, {icone:usuario, texto:" Adicionar Usuário", id:"botaoAdicionarUsuario", status:false}, {icone:assistido, texto:"Assistidos", id:"botaoAssistidos", status:false}, {icone:agendamento, texto:"Agendamentos", id:"botaoAgendamentos", status:false}, {icone:pastas, texto:"Pastas", id:"botaoPastas", status:false}, {icone:config, texto:"Configurações", id:"botaoConfiguracoes", status:false}] 
+
+function trocarFuncao(event) {
+    event.target.classList.toggle("botao-ativo");
+    for(let i = 0; i < logos.length; i++) {
+        if (event.target.id !== logos[i].id) {
+            document.getElementById(logos[i].id).classList.remove("botao-ativo");
+        }
+    }
+}
+
 function TelaProcessos() {
-    const logos = [{icone:home, texto:"Processos", id:"botaoProcessos"}, {icone:usuario, texto:" Adicionar Usuário", id:"botaoAdicionarUsuário"}, {icone:assistido, texto:"Assistidos", id:"botaoAssistidos"}, {icone:agendamento, texto:"Agendamentos", id:"botaoAgendamentos"}, {icone:pastas, texto:"Pastas", id:"botaoPastas"}, {icone:config, texto:"Configurações"}] 
+    const logos = [{icone:home, texto:"Processos", id:"botaoProcessos", status:true}, {icone:usuario, texto:" Adicionar Usuário", id:"botaoAdicionarUsuario", status:false}, {icone:assistido, texto:"Assistidos", id:"botaoAssistidos", status:false}, {icone:agendamento, texto:"Agendamentos", id:"botaoAgendamentos", status:false}, {icone:pastas, texto:"Pastas", id:"botaoPastas", status:false}, {icone:config, texto:"Configurações", id:"botaoConfiguracoes", status:false}] 
+
     return(
         <div id="tela">
             <div class="sidebar">
@@ -23,7 +36,7 @@ function TelaProcessos() {
                 <p id="tipo-de-usuario">Aluno</p>
                 <div id="navlinks-div">
                     {logos && logos.map((botao, i) => 
-                        <Navlink key={i} imagem={botao.icone} texto={botao.texto} id={botao.id}/>
+                        <Navlink key={i} imagem={botao.icone} texto={botao.texto} id={botao.id} className={botao.status ? "botao-ativo" : ""} />
                     )}
                 </div>
 

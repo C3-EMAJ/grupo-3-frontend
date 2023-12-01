@@ -74,6 +74,10 @@
     padding-top: 10px;
 }
 
+.botao-ativo {
+    background-color: #FDAE17;
+  }
+
 #botao-sair {
     padding-top: 90%;
     text-align: center;

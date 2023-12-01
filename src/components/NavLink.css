@@ -9,3 +9,10 @@
 #imagem-config {
     padding-right: 4%;
 }
+
+.botao-ativo {
+    background-color: #FDAE17;
+    border-radius: 5px;
+    padding: 7px;
+    margin: 0 0 0 -10px;
+  }
