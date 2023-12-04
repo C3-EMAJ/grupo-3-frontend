@@ -1,15 +1,21 @@
+body {
+    margin: 0;
+}
+
 #tela {
     font-family: 'Montserrat', sans-serif;
-    width: 95vw;
+    width: 90vw;
     height: 95vh;
     display: flex;
     flex-direction: row;
+    margin: 0;
+    padding: 0;
 }
 
 
 .sidebar {
     background-color: #CDCDCD;
-    width: 20%;
+    width: 25%;
     height: 100vh;
     position: relative;
     justify-content: left;
@@ -72,6 +78,7 @@
     justify-content: left;
     font-weight: 500;
     padding-top: 10px;
+    font-size: 16px;
 }
 
 .botao-ativo {
@@ -239,6 +246,7 @@ select {
     justify-content: center;
     display:flex;
     color: white;
+    cursor: pointer;
 }
 
 .quebra-galho{

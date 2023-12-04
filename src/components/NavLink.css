@@ -12,7 +12,15 @@
 
 .botao-ativo {
     background-color: #FDAE17;
-    border-radius: 5px;
+    border-radius: 6px;
     padding: 7px;
     margin: 0 0 0 -10px;
+    cursor: pointer;
   }
+
+.texto-link {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 400;
+    margin-left: 7px;
+}

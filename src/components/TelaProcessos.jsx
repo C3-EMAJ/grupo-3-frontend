@@ -11,21 +11,13 @@ import Navlink from "./NavLink";
 import editIcon from "./img/edit-icon.png"
 import trashIcon from "./img/trash-icon.png"
 import invisibleIcon from "./img/invisible-icon.png"
+import { useState } from "react"    
 
-
-const logos = [{icone:home, texto:"Processos", id:"botaoProcessos", status:true}, {icone:usuario, texto:" Adicionar Usuário", id:"botaoAdicionarUsuario", status:false}, {icone:assistido, texto:"Assistidos", id:"botaoAssistidos", status:false}, {icone:agendamento, texto:"Agendamentos", id:"botaoAgendamentos", status:false}, {icone:pastas, texto:"Pastas", id:"botaoPastas", status:false}, {icone:config, texto:"Configurações", id:"botaoConfiguracoes", status:false}] 
-
-function trocarFuncao(event) {
-    event.target.classList.toggle("botao-ativo");
-    for(let i = 0; i < logos.length; i++) {
-        if (event.target.id !== logos[i].id) {
-            document.getElementById(logos[i].id).classList.remove("botao-ativo");
-        }
-    }
-}
 
 function TelaProcessos() {
-    const logos = [{icone:home, texto:"Processos", id:"botaoProcessos", status:true}, {icone:usuario, texto:" Adicionar Usuário", id:"botaoAdicionarUsuario", status:false}, {icone:assistido, texto:"Assistidos", id:"botaoAssistidos", status:false}, {icone:agendamento, texto:"Agendamentos", id:"botaoAgendamentos", status:false}, {icone:pastas, texto:"Pastas", id:"botaoPastas", status:false}, {icone:config, texto:"Configurações", id:"botaoConfiguracoes", status:false}] 
+    const [activeButton, setActiveButton] = useState("botaoProcessos");
+
+    const logos = [{icone:home, texto:"Processos", id:"processos", status:true}, {icone:usuario, texto:" Adicionar Usuário", id:"usuarios", status:false}, {icone:assistido, texto:"Assistidos", id:"botaoAssistidos", status:false}, {icone:agendamento, texto:"Agendamentos", id:"botaoAgendamentos", status:false}, {icone:pastas, texto:"Pastas", id:"botaoPastas", status:false}, {icone:config, texto:"Configurações", id:"botaoConfiguracoes", status:false}] 
 
     return(
         <div id="tela">
@@ -36,7 +28,13 @@ function TelaProcessos() {
                 <p id="tipo-de-usuario">Aluno</p>
                 <div id="navlinks-div">
                     {logos && logos.map((botao, i) => 
-                        <Navlink key={i} imagem={botao.icone} texto={botao.texto} id={botao.id} className={botao.status ? "botao-ativo" : ""} />
+                        <Navlink 
+                        key={i} 
+                        imagem={botao.icone} 
+                        texto={botao.texto} 
+                        id={botao.id} 
+                        className={botao.status ? "botao-ativo" : "" } 
+                        onClick={(e) => setActiveButton(e.target.status = true)} />
                     )}
                 </div>
 

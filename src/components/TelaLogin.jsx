@@ -1,6 +1,6 @@
-import './TelaLogin.css';
 import imagem from "./img/emaj-login.png"
-
+import { Link } from 'react-router-dom';
+import './TelaLogin.css'
 
 function TelaLogin() {
     return(
@@ -14,10 +14,10 @@ function TelaLogin() {
             <p class="senha-texto">Password</p>
             <input class="input" id='password' type='password'></input>
             <div id='div-botao'>
-                <button id="botao"> <span id="texto-botao">Entrar</span> </button>
+                <button id="botao"> <Link className='texto-link' to={"/processos"}> Entrar </Link> </button>
             </div>
             <div id='esqueci-senha'>
-                <a href="http://localhost:3000/"  target='_blank'> Esqueci minha senha </a>
+                <a href="#"> Esqueci minha senha </a>
             </div> 
 
         </div>

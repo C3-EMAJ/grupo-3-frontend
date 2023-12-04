@@ -1,13 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import reportWebVitals from './reportWebVitals';
+import TelaLogin from './components/TelaLogin';
 import TelaProcessos from './components/TelaProcessos';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import TelaUsuario from './components/TelaUsuario';
+const router = createBrowserRouter([
+  { path: '/',
+   element: <TelaLogin /> },
+  { path: '/processos', 
+  element: <TelaProcessos /> },
+  {
+    path: '/usuarios',
+    element: <TelaUsuario />
+  }
+]);
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <TelaProcessos />
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );
 
